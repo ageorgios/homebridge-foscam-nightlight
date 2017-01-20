@@ -33,7 +33,7 @@ FoscamNightLightAccessory.prototype.getState = function(callback) {
   var that = this
   xmlToJson("http://" + this.hostname + ":" + this.port +"/cgi-bin/CGIProxy.fcgi?cmd=getNightLightState&usr="+this.username+"&pwd="+this.password, function(err, data) {
     if (err) return callback(err);
-    that.log("Foscam NightLight Get State: " + JSON.stringify(data, null, 2));
+    that.log("Foscam NightLight Get State: " + JSON.stringify(data));
     callback(null, parseFloat(data.CGI_Result.state[0]))
   })
 }
@@ -44,7 +44,7 @@ FoscamNightLightAccessory.prototype.setState = function(toggle, callback) {
   var that = this
   xmlToJson("http://" + this.hostname + ":" + this.port +"/cgi-bin/CGIProxy.fcgi?cmd=setNightLightState&state="+newstate+"&usr="+this.username+"&pwd="+this.password, function(err, data) {
     if (err) return callback(err);
-    that.log("Foscam NightLight Set State: " + JSON.stringify(data, null, 2));
+    that.log("Foscam NightLight Set State: " + JSON.stringify(data));
     callback()
   })
 }
