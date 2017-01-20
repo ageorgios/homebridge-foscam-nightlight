@@ -4,7 +4,7 @@ This is a plugin for [homebridge](https://github.com/nfarina/homebridge) which m
 in HomeKit for Foscam Cameras that have night light (Like the Foscam P1).
 
 # Information
-The temperature is retrieved from the CGI API of Foscam Cameras.
+The night light control is performed from the CGI API of Foscam Cameras.
 ```
 /cgi-bin/CGIProxy.fcgi?cmd=getNightLightState&usr=admin&pwd=
 /cgi-bin/CGIProxy.fcgi?cmd=setNightLightState&state=1&usr=admin&pwd=
