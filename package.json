@@ -1,0 +1,31 @@
+{
+  "name": "homebridge-foscam-nightlight",
+  "version": "1.0.0",
+  "description": "Control foscam Night Light from Foscam Cameras that have Night Light",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "author": "Georgios Andritsos <ageorgios@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "http": "0.0.0",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ageorgios/homebridge-foscam-nightlight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ageorgios/homebridge-foscam-nightlight/issues"
+  },
+  "homepage": "https://github.com/ageorgios/homebridge-foscam-nightlight#readme"
+}
