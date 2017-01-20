@@ -44,7 +44,7 @@ FoscamNightLightAccessory.prototype.setState = function(toggle, callback) {
   var that = this
   xmlToJson("http://" + this.hostname + ":" + this.port +"/cgi-bin/CGIProxy.fcgi?cmd=setNightLightState&state="+newstate+"&usr="+this.username+"&pwd="+this.password, function(err, data) {
     if (err) return callback(err);
-    that.log("Foscam NightLight Set State" + newstate + ": " + JSON.stringify(data));
+    that.log("Foscam NightLight Set State " + newstate + ": " + JSON.stringify(data));
     callback()
   })
 }
