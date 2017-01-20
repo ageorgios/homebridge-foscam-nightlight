@@ -1,6 +1,6 @@
 {
   "name": "homebridge-foscam-nightlight",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Control foscam Night Light from Foscam Cameras that have Night Light",
   "main": "index.js",
   "scripts": {
