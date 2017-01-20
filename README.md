@@ -14,9 +14,9 @@ The night light control is performed from the CGI API of Foscam Cameras.
 
 ```json
 {
-  "accessory": "FoscamTemperature",
-  "name": "Foscam Temperature Sensor",
-  "description": "The temperature sensor from a Foscam P1 Camera",
+  "accessory": "FoscamNightLight",
+  "name": "Foscam Night Light",
+  "description": "The Night Light from a Foscam P1 Camera",
   "hostname": "The hostname of the foscam camera", <- change this
   "port": "The port of the foscam camera", <- change this
   "username": "username of the foscam", <- change this
